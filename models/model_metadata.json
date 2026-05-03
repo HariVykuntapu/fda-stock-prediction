@@ -1,0 +1,45 @@
+{
+  "best_model": "XGBoost",
+  "feature_cols": [
+    "rss_score",
+    "approval_type_weight",
+    "drug_novelty_score",
+    "market_timing_factor",
+    "finbert_compound",
+    "vader_compound",
+    "market_cap_category",
+    "day_of_week",
+    "approval_quarter",
+    "prior_approvals_count"
+  ],
+  "target": "price_up_7d",
+  "train_size": 236,
+  "test_size": 60,
+  "metrics": {
+    "accuracy": {
+      "Logistic Regression": 0.5333,
+      "Random Forest": 0.5,
+      "XGBoost": 0.5333
+    },
+    "precision": {
+      "Logistic Regression": 0.5455,
+      "Random Forest": 0.5263,
+      "XGBoost": 0.5625
+    },
+    "recall": {
+      "Logistic Regression": 0.75,
+      "Random Forest": 0.625,
+      "XGBoost": 0.5625
+    },
+    "f1": {
+      "Logistic Regression": 0.6316,
+      "Random Forest": 0.5714,
+      "XGBoost": 0.5625
+    },
+    "auroc": {
+      "Logistic Regression": 0.4431,
+      "Random Forest": 0.5525,
+      "XGBoost": 0.5725
+    }
+  }
+}

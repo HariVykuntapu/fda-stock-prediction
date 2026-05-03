@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/*.csv
+# models/*.pkl excluded — pkls are committed for Streamlit Cloud
+.env
+paper/
